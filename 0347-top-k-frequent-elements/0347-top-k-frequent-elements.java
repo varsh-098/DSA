@@ -1,53 +1,30 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
 
-        HashMap<Integer, Integer> freq = new HashMap<>();
-        HashSet<Integer> processed = new HashSet<>();
+        HashMap<Integer,Integer> freq = new HashMap<>();
 
-        for (int i = 0; i < nums.length; i++) {
-
-            if (processed.contains(nums[i])) {
-                continue;
-            }
-
-            int count = 0;
-
-            for (int j = 0; j < nums.length; j++) {
-
-                if (nums[i] == nums[j]) {
-                    count++;
-                }
-            }
-
-            freq.put(nums[i], count);
-            processed.add(nums[i]);
+        for(int num : nums) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
 
-        ArrayList<Integer> result = new ArrayList<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->freq.get(a)-freq.get(b));
 
-        for (int i = 0; i < k; i++) {
+        for(int num : freq.keySet()) {
+            pq.add(num);
 
-            int max = 0;
-            int maxelem = 0;
-
-            for (int num : freq.keySet()) {
-
-                if (freq.get(num) > max) {
-                    max = freq.get(num);
-                    maxelem = num;
-                }
+            if(pq.size() > k) {
+                pq.poll();
             }
-
-            result.add(maxelem);
-            freq.remove(maxelem);
         }
 
-        int a[] = new int[k];
+        int result[] = new int[k];
+        int index = 0;
 
-        for (int i = 0; i < k; i++) {
-            a[i] = result.get(i);
+        while(!pq.isEmpty()) {
+            result[index] = pq.poll();
+            index++;
         }
 
-        return a;
+        return result;
     }
 }
