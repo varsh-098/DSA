@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/varsh-098/DSA/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/varsh-098/DSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/varsh-098/DSA/tree/master/0239-sliding-window-maximum) |
+| [0283-move-zeroes](https://github.com/varsh-098/DSA/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/varsh-098/DSA/tree/master/0347-top-k-frequent-elements) |
 | [0643-maximum-average-subarray-i](https://github.com/varsh-098/DSA/tree/master/0643-maximum-average-subarray-i) |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/varsh-098/DSA/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/varsh-098/DSA/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/varsh-098/DSA/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/varsh-098/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0283-move-zeroes](https://github.com/varsh-098/DSA/tree/master/0283-move-zeroes) |
 | [0567-permutation-in-string](https://github.com/varsh-098/DSA/tree/master/0567-permutation-in-string) |
 ## Binary Search
 |  |
